@@ -1,0 +1,239 @@
+/* ----------------SELECTEUR GENERAL------------------------ */
+*{
+    font-family: "Playwrite DE Grund", cursive;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    font-weight: bold;
+    text-align: center;
+    margin: 30px auto;
+    padding-left: 15px;
+    border-right: 5px solid rgb(228, 192, 9); 
+    border-bottom: 5px solid rgb(228, 192, 9) ;
+    width: 400px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+h1:hover{
+    background-color:  rgba(228, 191, 9, 0.337);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* -------------------NAVIGATION------------------------------ */
+
+.sticky-top{
+    background-color: rgb(243, 243, 149);
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-link:hover{
+    background-color:rgba(228, 191, 9, 0.638);
+    color: black;
+    font-weight: bold;
+}
+
+/* ----------------SECTION ACCUEIL------------------------ */
+
+#accueil{
+    background-image:url(/images/header.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.welcome{
+    font-size: 50px;
+    font-weight: bold;
+    width: 500px;
+    /* background-color: red; */
+    color: rgb(255, 255, 255);
+}
+
+.btn{
+    background-color: rgb(243, 243, 149);
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: rgb(203, 203, 131);
+}
+
+.butn:hover{
+    color: black;
+}
+
+
+/* ----------------SECTION MENU------------------------ */
+
+#menu{
+    margin-top: 70px;
+}
+
+#menu .container .h1 a h1 {
+    width: 350px;
+}
+.food{
+    margin-right: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 320px;
+}
+
+h5{
+    background-color: rgba(255, 254, 254, 0.5);
+    text-align: right;
+    font-weight: bolder;
+    font-size: 15px;
+    position: absolute;
+    padding: 5px;
+    top: 69%;
+    width: 300px; 
+    color: rgb(0, 0, 0)
+}
+
+.para{
+    margin-top: 5px;
+}
+/* ----------------SECTION A PROPOS------------------------ */
+
+#apropos .container .h1 a h1{
+    width: 500px;
+    margin-bottom: 50px;
+}
+#apropos{
+    margin-top: 70px;
+}
+
+.ctn{
+    padding: 20px;
+}
+
+#propos2 p{
+    text-align: justify;
+    margin-top: 50px;
+}
+/* ----------------SECTION CONTACT------------------------ */
+
+
+/* ----------------MON FOOTER------------------------ */
+
+.foot{
+    flex-direction: column;
+}
+
+#footer{
+    background-image: url(/images/back-cont.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+
+}
+
+.foot1 a{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(228, 192, 9) ;
+}
+
+.foot2 p{
+    margin-top: 200px;
+    color: white;
+    /* background-color: red; */
+}
+
+.foot2 a img{
+    background-color:white; 
+    border-radius: 20%;
+    width: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.foot1 a{
+    margin-left: 50px;
+    background-color: rgba(255, 247, 133,);
+}
+
+/* ----------------------------MEDIA QUERIES-------------------------- */
+
+
+
+/*  Extra Small devices */
+@media (max-width: 576px) 
+    {
+        .logo{
+            display: none;
+        }
+
+        .menu{
+            justify-content: center;
+        }
+    }
+
+/* small devices (landscapes phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) 
+    {
+        .menu{
+            justify-content: center;
+        }
+    }
+
+/* medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px)  
+    { 
+        .menu{
+            justify-content: center;
+        }
+
+        .row #propos1 img{
+            margin-top: 90px;
+            width: 300px;
+        }
+    }
+
+/* X-Large devices (large desktops, 992px and up) */
+@media(min-width: 992px) and (max-width: 1200px)  
+    { 
+        .btn{
+            display: none;
+        }
+
+        .menu{
+            justify-content: center;
+        }
+        .row #propos1 img{
+            margin-top: 20px;
+            width: 400px;
+        }
+    }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1200px) 
+    { 
+        .menu{
+            justify-content: center;
+        }
+    }
+
+
+
+
