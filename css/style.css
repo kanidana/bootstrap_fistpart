@@ -2,10 +2,11 @@
 *{
     font-family: "Playwrite DE Grund", cursive;
     font-style: normal;
-    margin: 0;
-    padding: 0;
 }
 
+body{
+    width: 100%;
+}
 
 h1{
     font-weight: bold;
@@ -43,10 +44,11 @@ a{
     font-weight: bold;
 }
 
+
 /* ----------------SECTION ACCUEIL------------------------ */
 
 #accueil{
-    background-image:url(/images/header.jpg) ;
+    background-image:url(/images/ai-generated-8214773_1280.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -60,23 +62,19 @@ a{
     font-size: 50px;
     font-weight: bold;
     width: 500px;
-    /* background-color: red; */
     color: rgb(255, 255, 255);
 }
 
 .btn{
     background-color: rgb(243, 243, 149);
     font-weight: bold;
+    
 }
 
 .btn:hover{
     background-color: rgb(203, 203, 131);
+    color: white;
 }
-
-.butn:hover{
-    color: black;
-}
-
 
 /* ----------------SECTION MENU------------------------ */
 
@@ -128,7 +126,54 @@ h5{
     margin-top: 50px;
 }
 /* ----------------SECTION CONTACT------------------------ */
+#contacts h1{
+    width: 480px;
+}
 
+#contact{
+    background-color:rgba(230, 190, 31, 0.219) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+ }
+ 
+.formera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+}
+ 
+ .textform input, textarea{
+    width: 300px;
+    margin-bottom: 30px;
+    height: 30px;
+    border-radius: 3px ;
+ }
+
+ label{
+    font-weight: bold;
+ }
+
+ #contact p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+ }
+ .btnc{
+    background-color: rgb(230, 190, 31);
+    border: rgb(230, 190, 31);
+    border-radius: 3px;
+ }
+ 
+ .btnc:hover{
+    background-color: rgba(102, 75, 12, 0.654);
+    color: white;
+ }
 
 /* ----------------MON FOOTER------------------------ */
 
@@ -150,14 +195,14 @@ h5{
 
 .foot1 a{
     font-size: 30px;
+    margin-top: 50px;
     font-weight: bold;
-    color: rgb(228, 192, 9) ;
+    color: rgb(228, 192, 9);
 }
 
 .foot2 p{
     margin-top: 200px;
     color: white;
-    /* background-color: red; */
 }
 
 .foot2 a img{
@@ -180,12 +225,41 @@ h5{
 /*  Extra Small devices */
 @media (max-width: 576px) 
     {
+        body{
+            width: 100%;
+        }
         .logo{
             display: none;
         }
 
         .menu{
             justify-content: center;
+        }
+
+        .welcome{
+            font-size: 30px;
+            width: 300px;
+        }
+
+        #apropos .container .h1 a h1{
+            width: 350px;
+            margin-bottom: 50px;
+        }
+        
+        #contacts h1{
+            width: 330px;
+        }
+
+        #menu .container .h1 a h1 {
+            width: 250px;
+        }
+
+        #propos1 img{
+            width: 392px;
+        }
+
+        #contact p{
+
         }
     }
 
@@ -195,6 +269,35 @@ h5{
         .menu{
             justify-content: center;
         }
+
+        .textform input, textarea{
+            width: 400px;
+            height: 35px;
+            border-radius: 3px ;
+        }
+
+        .welcome{
+            font-size: 40px;
+            width: 400px;
+        }
+
+        #apropos .container .h1 a h1{
+            width: 390px;
+            margin-bottom: 50px;
+        }
+        
+        #contacts h1{
+            width: 350px;
+        }
+
+        #menu .container .h1 a h1 {
+            width: 280px;
+        }
+
+        .nav{
+            margin: 10px auto;
+        }
+        
     }
 
 /* medium devices (tablets, 768px and up) */
@@ -208,7 +311,29 @@ h5{
             margin-top: 90px;
             width: 300px;
         }
+
+        .textform input, textarea{
+            width: 400px;
+            margin-bottom: 30px;
+            height: 35px;
+            border-radius: 3px;
+        }
+
+        #apropos .container .h1 a h1{
+            width: 420px;
+            margin-bottom: 50px;
+        }
+        
+        #contacts h1{
+            width: 380px;
+        }
+
+        #menu .container .h1 a h1 {
+            width: 290px;
+        }
+
     }
+
 
 /* X-Large devices (large desktops, 992px and up) */
 @media(min-width: 992px) and (max-width: 1200px)  
@@ -224,6 +349,26 @@ h5{
             margin-top: 20px;
             width: 400px;
         }
+
+        .textform input, textarea{
+            width: 400px;
+            margin-bottom: 30px;
+            height: 35px;
+            border-radius: 3px ;
+        }
+
+        #apropos .container .h1 a h1{
+            width: 460px;
+            margin-bottom: 50px;
+        }
+        
+        #contacts h1{
+            width: 420px;
+        }
+
+        #menu .container .h1 a h1 {
+            width: 310px;
+        }
     }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -231,6 +376,26 @@ h5{
     { 
         .menu{
             justify-content: center;
+        }
+
+        .textform input, textarea{
+            width: 400px;
+            margin-bottom: 30px;
+            height: 35px;
+            border-radius: 3px ;
+        }
+
+        #apropos .container .h1 a h1{
+            width: 450px;
+            margin-bottom: 50px;
+        }
+        
+        #contacts h1{
+            width: 435px;
+        }
+
+        #menu .container .h1 a h1 {
+            width: 320px;
         }
     }
 

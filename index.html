@@ -9,19 +9,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <!-- LIEN STYLE CSS -->
     <link rel="stylesheet" href="/css/style.css">
-    <!-- LIEN DE Mon logo -->
-    <link rel="icon" href="https://www.pngall.com/wp-content/uploads/8/Restaurant-Logo-PNG-Image-File.png" type="images/x-icon">
     <!-- LIEN GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid d-flex justify-content-center">
-                <div class="col-md-6 col-lg-4">
+            <div class="container-fluid justify-content-center">
+                <div class="">
                     <a class="navbar-brand" href="#">
                         <img src="./images/Logo-removebg-preview.png" alt="Bootstrap" width="200" height="" class="logo">
                     </a>
@@ -30,9 +28,8 @@
                     </button>
                 </div>
 
-
-                <div class="collapse navbar-collapse col-md-6 col-lg-4" id="navbarNavDropdown">
-                    <ul class="nav" >
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="nav justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link" href="#accueil">Accueil</a>
                         </li>
@@ -48,7 +45,7 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
                     </form>
                 </div> 
             </div>
@@ -57,12 +54,10 @@
 
     <section id="accueil">
         <div class="flew">
-            <div>
                 <p class="welcome">BIENVENUE Chez Le Petit Gourmand</p>
-            </div>
-            <div>
-                <a href="#"><button type="button" class="btn btn-lg">Commandez</button></a>
-            </div>
+                <div class="mx-auto p-2" style="width: 180px;">
+                    <a href="#"><button type="" class="btn btn-lg">Commandez</button></a>
+                </div>
         </div>
     </section>
 
@@ -109,7 +104,7 @@
                 <div class="h1 hap">
                     <a href="#apropos"><h1>A Propos De Nous</h1></a>
                 </div>
-                <div class="row">
+                <div class="row all">
                     <div id="propos1" class="col-md-6">
                         <img src="./images/a propos.jpg" alt="" width="500">
                     </div>
@@ -125,8 +120,27 @@
             </div>
     </section>
 
-    <section id="contact">
-       
+    <section id="contacts">  
+        <a href="#contact"><h1>Nous contacter</h1></a>
+        <div id="contact">
+            <p>Envoyez-nous un message pour passez votre commande, faire une reservation ou vous abonner a notre newsletter</p>
+            <form class="formera">
+                <div class="textform">
+                    <label for="email">Email</label><br>
+                    <input type="text" placeholder="nom"><br>
+                </div>
+                <div class="textform">
+                    <label for="passeword">Passeword</label><br>
+                    <input type="passeword" placeholder="mot de passe"><br>
+                </div>
+                <div class="textform">
+                    <label for="text">Commentaire</label><br>
+                    <textarea name="message"></textarea><br>
+                </div>
+                <input type="submit" value="Envoyez" class="btnc">
+                
+            </form>
+        </div>
     </section>
 
     <section id="footer">
