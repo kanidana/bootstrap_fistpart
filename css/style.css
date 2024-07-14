@@ -2,6 +2,7 @@
 *{
     font-family: "Playwrite DE Grund", cursive;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -16,6 +17,7 @@ h1{
     border-right: 5px solid rgb(228, 192, 9); 
     border-bottom: 5px solid rgb(228, 192, 9) ;
     width: 400px;
+    margin-top: 40px;
     border-radius: 10px;
     text-transform: uppercase;
 }
@@ -55,7 +57,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 780px;
 }
 
 .welcome{
